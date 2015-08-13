@@ -27,5 +27,19 @@ puts person.doctor
 puts person.lawyer
 
 
+#create local variables first, then insert into class instance 
+puts "Enter your first name:"
+first_name = gets.chomp
+
+puts "Enter your last name:"
+last_name = gets.chomp
+
+puts "Enter your gender:"
+gender = gets.chomp
+
+other = Person.new(first_name, last_name, gender)
+puts other.fullname
+
+
 
 
